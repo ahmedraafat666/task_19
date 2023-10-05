@@ -1,0 +1,14 @@
+How to read mongodb exported json in pandas : 
+
+1. 
+
+querywith open(r'/Month/Applications_test.json', 'w') as f:
+for x in dic:
+    json.dump(x, f, default=json_util.default)
+
+
+
+
+2. 
+
+data_df = pd.read_json(r'/Month/Applications_test.json', lines = True)

@@ -1,0 +1,56 @@
+Relational vs. Non-Relational Database :
+
+
+- What is a Relational Database :
+
+Relational databases organize data into tables with rows and columns, where each row represents a record, and each column represents a field. This structure allows for easy querying and data manipulation using Structured Query Language (SQL). 
+
+Since relational databases are the more traditional way to store data in a tabular form, most people are familiar with their use cases, making them the most popular option amongst developers.
+
+The table itself would be made up of one variable or object we would be looking through. The column represents the data point that needs to be stored, and the row records the data points per column.
+
+For example, if you are looking to sort data regarding what the weather is at a specific time of the day during a specific day, it would be structured as the following:
+
+Table: Weather
+Columns: Days of the Week
+Rows: Time of Day
+Data Points: Degrees Fahrenheit
+In this structure, all queries would be related to this table, and the table's structure would allow for easy sorting, filtering, computations, etc. 
+
+If we ever need to establish a connection between tables, say, you want to know what the weather was at a certain time and relate that to a baseball game's predicted score. What we do is create what is called a key. This key allows for connections between two or more tables to solidify associations between the two. 
+
+‍
+
+Some popular SQL database systems include:
+
+Oracle
+Microsoft SQL Server
+PostgreSQL
+MySQL
+MariaDB
+
+
+
+=======================================================================
+
+-What is a Non-Relational Databas :
+
+A non-relational database, also known as a NoSQL database, is a type of database that does not use the traditional table-based relational structure. Instead, non-relational databases use various data models, such as key-value, document, column-family, and graph. 
+
+This allows for greater flexibility in storing and managing data, especially for large-scale, distributed, and unstructured data. To break it down, let's go through the types of non-relational data models one by one.
+
+Key-value: This data model comprises two parts: a key and a value. The key is like an index, used to look up and access the value containing the data stored in the database.
+Document: Documents are self-contained, meaning all the information related to a single record is stored within one document. This makes it easier to add or modify data as needed.
+Column family: Column family databases store data in columns 
+Graph: Graph databases use nodes and edges to represent relationships between different data sets.
+Some popular NoSQL databases include:
+
+MongoDB
+Google Cloud Firestore
+Cassandra
+Redis
+Apache HBase
+Amazon DynamoDB
+In contrast to a relational database, a NoSQL database is one that is less structured/confined in format and, thus, allows for more flexibility and adaptability. If you are going to be dealing with a dataset that isn't clearly defined, meaning not organized or structured, you likely won't have the luxury of establishing defined tables and relationships amongst the dataset.
+
+For example, Facebook Messenger uses a NoSQL database because the information that is being gathered isn't structured enough to be segmented into tables and define relationships between each other. With tons of unstructured information, it needs to be held in a non-relational database. 
